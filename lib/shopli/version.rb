@@ -1,3 +1,3 @@
-module Shopli
+class Shopli
   VERSION = "0.0.1"
 end

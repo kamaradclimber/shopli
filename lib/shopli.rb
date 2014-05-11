@@ -1,5 +1,4 @@
-require "shopli/version"
+require_relative "shopli/version.rb"
 
-module Shopli
-  # Your code goes here...
-end
+require_relative 'shopli/barcode.rb'
+require_relative 'shopli/barcode_reader.rb'
