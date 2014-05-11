@@ -1,5 +1,8 @@
 # Shopli
 
+[![Build Status](https://travis-ci.org/kamaradclimber/shopli.png?branch=master)](https://travis-ci.org/kamaradclimber/shopli)
+[![Gem Version](https://badge.fury.io/rb/shopli.png)](http://badge.fury.io/rb/shopli)
+
 Using a barcode reader, scan all item you put in the trash.
 Shopli will use that list of barcodes and generate a shopping list.
 
