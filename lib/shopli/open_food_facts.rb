@@ -17,8 +17,8 @@ class Shopli
       json = fetch_product(barcode)
       p = JSON.parse(json)
       if p['status'] == 1
-        product = Product.new p['_id']
-        product.name = p['generic_name']
+        product = Product.new p['product']['_id']
+        product.name = p['product']['generic_name']
         product
       else
         nil
