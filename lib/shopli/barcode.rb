@@ -3,6 +3,10 @@ class Shopli
 
     BARCODE_SIZE = 13
 
+    def ==(other)
+      other && @barcode == other.barcode
+    end
+
     def self.read(events)
       events.lazy.select do |event|
         is_release = (event.type == 1) && (event.value_str.eql? 'Release')
