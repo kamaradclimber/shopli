@@ -5,7 +5,7 @@ describe Shopli::OpenFoodFacts do
 
     it 'can call openfoodfacts.org' do
       off = Shopli::OpenFoodFacts.new
-      expect{ @product = off.product('3029330003533') }.not_to raise_error
+      expect{ @product = off.fetch_product('3029330003533') }.not_to raise_error
       expect{ JSON.parse(@product) }.not_to raise_error
     end
 

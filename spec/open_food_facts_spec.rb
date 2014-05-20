@@ -10,7 +10,7 @@ describe Shopli::OpenFoodFacts do
         and_return(rest_client)
       allow(rest_client).to receive(:get)
       off = Shopli::OpenFoodFacts.new
-      off.product('3029330003533')
+      off.fetch_product('3029330003533')
     end
 
   end
